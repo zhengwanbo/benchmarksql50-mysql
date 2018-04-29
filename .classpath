@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/client"/>
+	<classpathentry kind="src" path="src/jdbc"/>
+	<classpathentry kind="src" path="src/LoadData"/>
+	<classpathentry kind="src" path="src/OSCollector"/>
+	<classpathentry kind="lib" path="lib/apache-log4j-extras-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/firebird/connector-api-1.5.jar"/>
+	<classpathentry kind="lib" path="lib/firebird/jaybird-2.2.9.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/postgres/postgresql-9.3-1102.jdbc41.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
