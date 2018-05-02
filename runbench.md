@@ -1,8 +1,11 @@
 
-support tpcc test for mysql and tidb .
+Support tpcc test for mysql and tidb.
+--------------------------------------
 
-steps:
+Run command and steps.
+--------------------------------------
 
+```
 #create database.
 mysql -uroot -P4000 -h127.0.0.1 -e "create database tpcc"
 
@@ -30,3 +33,5 @@ vi prop.mysql
 
 #run tpcc benchmark
 ./runBenchmark.sh props.mysql
+
+```
