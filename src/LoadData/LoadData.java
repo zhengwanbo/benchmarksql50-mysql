@@ -20,7 +20,7 @@ public class LoadData
     private static jTPCCRandom  rnd;
     private static String       fileLocation = null;
     private static String       csvNullValue = null;
-
+    
     private static int          numWarehouses;
     private static int          numWorkers;
     private static int          nextJob = 0;
@@ -133,6 +133,8 @@ public class LoadData
 
 	System.out.println("");
 
+    long startTimeMS = new java.util.Date().getTime();
+    
 	/*
 	 * Create the number of requested workers and start them.
 	 */
@@ -176,8 +178,13 @@ public class LoadData
 		System.exit(4);
 	    }
 	}
-
-	/*
+	
+    long runTimeMS = (new java.util.Date().getTime()) + 1 - startTimeMS;
+    java.util.Date endDate = new java.util.Date();
+    
+    System.out.println("Loading TPCC " + numWarehouses + " warehouse done, end time: " + endDate + ", running duration" + runTimeMS/1000 + "seconds " );
+	
+    /*
 	 * Close the CSV files if we are writing them.
 	 */
 	if (writeCSV)

@@ -1,6 +1,6 @@
 db=mysql
 driver=com.mysql.jdbc.Driver
-conn=jdbc:mysql://172.16.10.11:4000/tpcc5?rewriteBatchedStatements=false
+conn=jdbc:mysql://172.16.10.11:4000/tpcc5?rewriteBatchedStatements=false&useServerPrepStmts=true&useSSL=false
 user=root
 password=
 
