@@ -32,7 +32,7 @@ public class ExecJDBC {
 
     // make connection
     conn = DriverManager.getConnection(ini.getProperty("conn"),
-      ini.getProperty("user"),ini.getProperty("password"));
+           ini.getProperty("user"), ini.getProperty("password"));
     conn.setAutoCommit(true);
 
     // Create Statement
